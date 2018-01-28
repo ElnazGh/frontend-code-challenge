@@ -26,10 +26,14 @@ First make sure Gulp is globally installed, by running:
 <pre>
 	<code>
 npm install -g gulp
-npm install --save gulp-cli
 	</code>
 </pre>
 After cloning the project, run the following commands:
+<pre>
+	<code>
+npm install --save gulp-cli
+	</code>
+</pre>
 <pre>
 	<code>
 npm install
