@@ -23,15 +23,20 @@ Since I didn't have much experience with Webpack & babel, and due to lack of tim
 # Installation instructions
 
 First make sure Gulp is globally installed, by running:
-
-npm install -g gulp
-npm install --save gulp-cli
-
+<pre>
+	<code>
+		npm install -g gulp
+		npm install --save gulp-cli
+	</code>
+</pre>
 After cloning the project, run the following commands:
-
-npm install
-gulp build
-gulp run
+<pre>
+	<code>
+		npm install
+		gulp build
+		gulp run
+	</code>
+</pre>
 
 This will start the development server, the TODO sample app should be available at the following url:
 
