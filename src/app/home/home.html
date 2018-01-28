@@ -1,0 +1,55 @@
+<!-- subheader -->
+<section class="subheader-section" >
+    <div class="container">
+        <h1>Front-End Interview Test</h1>
+    </div>
+</section>
+<!-- subheader end -->
+
+<!-- main section -->
+<section class="main-container" >
+	<p ng-show="isLoading" class="spinner-icon">
+    	<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
+    </p>
+    <!-- Each item --> 
+    <div id="advertisementAssets{{$index}}" 
+    		ng-repeat="item in advertisementAssets track by $index" 
+    		ng-model="advertisementAssets[$index].id" 
+    		class="col3" >
+
+		<div class="col-holder"> <!-- to keep the height consistent -->
+	        <img src="{{advertisementAssets[$index].imgUrl}}" 
+	        		alt="Image{{advertisementAssets[$index]}}" />
+	        <span class="imgTxt shadow">Mieten</span>
+
+	        <!-- Item - Text section -->
+	        <div class="txt-container">
+
+	        	<div class="col-top-txt">
+		            <h2 class="col-heading">
+		                {{advertisementAssets[$index].title}}
+		            </h2>
+		            <span class="col-subHeading">
+		            	{{advertisementAssets[$index].realestateSummary.address.postalCode}} {{advertisementAssets[$index].realestateSummary.address.city}} / {{advertisementAssets[$index].realestateSummary.address.street}}
+		            </span>
+		        </div>
+
+	            <div class="col-bottom-txt">
+	                <p>{{advertisementAssets[$index].advertisementPrice.baseRent}}&#8364;</p>
+	                <p class="details">
+	                    {{advertisementAssets[$index].realestateSummary.numberOfRooms}} Zimmer
+	                    <i>&#124;</i>
+	                    ab {{advertisementAssets[$index].realestateSummary.space}} m<sup>2</sup>
+	                </p>
+	            </div>
+	            
+	        </div>
+	         <!-- Item - Text section end -->
+
+	    </div>
+    </div>
+	<!-- Each item end -->
+
+</section>
+<!-- main section end -->

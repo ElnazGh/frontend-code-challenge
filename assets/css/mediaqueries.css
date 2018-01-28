@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*  Anything Large */
+@media only screen and (min-width: 767px) {
+    /* Homepage */
+    
+    .container,
+     .main-container {
+        max-width: 1024px;
+    }
+    .container {
+        padding: 25px;
+    }
+    .main-container {
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    .col3 {
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+    .col3 img {
+        max-width: unset;
+    }
+    .col3 .col-subHeading {
+        margin: 10px 0 0 0;
+    }
+    .col3 .col-top-txt {
+       /* min-height: auto;*/
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .col3 {
+        display: block;
+        width: 100%;
+    } 
+    .col-holder {
+        min-height: auto;
+    }
+    .col3 img,
+     .col3 .txt-container {
+        display: inline-block;
+        float: left;
+    }
+    .col3 img {
+        max-width: 304px;
+        width: 260px;
+    }
+    .col3 .txt-container {
+        width: auto;
+        width: calc(100% - 260px);
+        /*height: 173px;*/
+        padding: 9px 15px;
+    }
+    .col3 .col-subHeading {
+        margin: 10px 0 0 0;
+    }
+    .col3 .col-top-txt {
+        min-height: 76px;
+    }
+    .col3 .col-bottom-txt p {
+        font-size: 12px;
+    }
+    .col3 .col-bottom-txt p.details {
+        float: left;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .col-holder {
+        min-height: auto;
+    }
+    .col3 {
+        display: block;
+        width: 100%;
+    } 
+    .col3 img {
+        max-width: 600px;
+    }
+    .col3 .col-top-txt {
+        min-height: 76px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    /*and (min-width: 320px) */
+    
+    header {
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    h2 {
+        font-size: 17px;
+        line-height: 17px;
+        margin: 0 0 15px 0;
+    }
+    /* Helper*/
+    
+    .page-holder {
+        padding: 0px;
+    }
+    /* Homepage */
+    
+    .container,
+     .main-container {
+        max-width: 480px;
+    }
+    .container {
+        padding: 25px 15px;
+    }
+    .main-container {
+        padding: 25px 0px;
+    }
+    .subheader-section .container {
+        padding: 10px 15px;
+    }
+    /*.col3 {
+        display: block;
+        width: 100%;
+    } 
+    .col3 img {
+        max-width: 463px;
+    }
+    .col3 .col-subHeading {
+        margin: 0;
+    }*/
+}
+@media only screen and (max-width: 320px) {
+
+    /* Homepage */
+    .container,
+     .main-container {
+        max-width: 320px;
+    }
+}

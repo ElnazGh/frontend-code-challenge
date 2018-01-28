@@ -1,22 +1,28 @@
 {
   "name": "frontend_interview_test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An interview test for Front-End Development job candidates",
-  "main": "index.js",
+  "main": "app.js",
   "repository": "git@github.com:OskHa/frontend_interview_test.git",
   "author": "Tejas Kumar <tejas.kumar@mcmakler.de>",
   "license": "MIT",
   "scripts": {
-    "serve": "webpack-dev-server"
+    "test": "echo \"Error: no test specified\" "
   },
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.5.2",
-    "eslint": "^4.0.0",
-    "html-webpack-plugin": "^2.28.0",
-    "style-loader": "^0.18.2",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "gulp-cli": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-merge": "^0.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^5.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.1",
+    "angular": "^1.6.8",
+    "angular-ui-router": "^1.0.3",
+    "@uirouter/angularjs": "^1.0.13",
+    "font-awesome": "^4.7.0"
   }
 }

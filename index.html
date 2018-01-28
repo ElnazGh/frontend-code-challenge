@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en" ng-app="advApp" >
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+        <title> Elle - Web Design and Development Brisbane | homepage | sale, rent, apartments, house </title>
+        <meta name="robots" content="noindex, nofollow, nosnippet, noarchive" />
+        <meta name="googlebot" content="noodp" />
+        <meta name="slurp" content="noydir" />
+        <meta name="keywords" content="null" />
+        <meta name="description" content="null" />
+        <meta name="HandheldFriendly" content="false"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="author" content="Elnaz Gharaee"/>
+        <meta name="icbm" content="-27.471084,153.015999"/>
+        
+        <!-- style -->
+        <!--<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/mediaqueries.css"/> -->
+
+        <!-- Vendor js libraries -->
+        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script> -->
+
+        <link rel="stylesheet" href="app.css">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/x-icon"  href="assets/images/favicon-32x32.png" />
+
+        <!-- app -->
+        <script src="vendor.js"></script>
+        <script src="index.js"></script>
+
+        <!-- <script src="src/app/home/home.component.js"></script>
+        <script src="src/app/home/home.controller.js"></script> -->
+
+    </head>
+    <body>
+        <section class="page-holder" >
+            <!-- header starts -->
+            <header>
+                <a href="index.html" target="_self" title="McMakler" class="logo">
+                    <img src="assets/images/header/logo.svg" width="100%" alt="McMakler Logo"/>
+                </a>  
+            </header>
+            <!-- header end -->
+
+            <section class="welcome-page-holder" >
+                <div class="welcome-container">
+                    <div ui-view></div>
+                </div>   
+            </section>
+
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <hr/>
+                    <p> &#169; Elnaz Gharaee - 2018 </p>
+                </div>
+            </footer>
+            <!-- footer end -->
+
+        </section>
+
+    </body>
+</html>

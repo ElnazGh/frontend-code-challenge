@@ -1,49 +1,38 @@
-# Front-End Interview Test
+# Front-End Interview Test - Development
 
-This is a simple front-end code challenge created to serve two purposes:
-
-1. Show off your skills,
-1. Give us a better understanding of your skills.
-
-## The Task
-
-The programming challenge exists in 2 parts:
 * Part A: HTML + CSS
+
+Usage of SCSS preprocessor:
+	- It is completely compatible with all versions of CSS.
+	- Greatly enhances CSS development.
+	- Results in clean, extensible and reusable CSS code
+
+Applied Progressive Enhancement Design method to make the website adapt to all device sizes.
+
 * Part B: Javascript
 
-### PART A: HTML + CSS
+Usage of AngularJS Javascript framework:
+	- It is a structural framework for dynamic web apps 
+	- One of the best frameworks for developing a Single Page Application (SPA)
+	- It allows for the extension of HTML's syntax to convey the application's components effortlessly.
+	- Angular makes much of the code you would otherwise have to write completely redundant.
+	- Best Features are two-way binding, templating, modularization, dependency injection, etc
 
-![Screen](https://raw.githubusercontent.com/mcmakler/frontend-code-challenge/master/assets/fe_test_example_screen.png)
+Since I didn't have much experience with Webpack & babel, and due to lack of time to learn it, I used gulp as a task/build runner, also IE and Safari browsers don't support ES6 and because I was unable to investigate how to use babel to fix it, unfortunately it doesn't work properly in IE and Safari browsers but works perfectly in Chrome and Firefox.
 
-* Create a layout based on the given screen (fe_test_example_screen.png).
-* Style the layout consistently and beautifully, adhering as closely to the design as possible.
-* **NOTE:** You are free to use any preprocessor you wish, or write raw CSS. *Bonus points for an explanation of your choice.*
+# Installation instructions
 
-### PART B: Javascript
+First make sure Gulp is globally installed, by running:
 
-* Consume our public API @ https://api.mcmakler.de/v1/advertisements to retrieve a list of advertisements of vacant apartments.
-* Display the first 10 advertisements in the HTML + CSS layout created in step A, sticking to the layout, placing data where it fits.
-* **NOTE:** You are free to use any framework you wish, or do it VanillaJS style. *Brief explanation of your choice.*
+npm install -g gulp
+npm install --save gulp-cli
 
-## Additional Instructions
+After cloning the project, run the following commands:
 
-* Fork this repository
-* After you're done, provide us the link to your repository.
-* Leave comments where you were not sure how to properly proceed.
-* Implementations without a README will be automatically rejected.
-* No pull requests
-* ES6 and above
+npm install
+gulp build
+gulp run
 
-## Bonus Points
+This will start the development server, the TODO sample app should be available at the following url:
 
-* Tests
-* Clean code!
-* Knowledge of application flow.
-* Knowledge of modern best practices/coding patterns.
-* Demonstration of good state management.
-* Usage of frameworks/supersets.
-* Pixel perfection.
-* Componential thinking.
-* Usage of linters.
-* Git hooks.
-* Usage of Material Design concepts
+http://localhost:8080/frontend-code-challenge/#!/src/app/home
